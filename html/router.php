@@ -1,11 +1,10 @@
-<?php 
+<?php
 	$page = $_SERVER["REQUEST_URI"];
-		if ($page == "/index.php")
-		echo "You are currently on the 'Home' page at the following URI: " . $page;
-		elseif ($page == "/about.php")
-		echo "You are currently on the 'About' page at the following URI: " . $page;
-		elseif ($page == "/contact.php")
-		echo "You are currently on the 'Contact' page at the following URI: " . $page;
+	$file = substr($page, 10);
+		if ($file == "about")
+		include('./index.php/about');
+		elseif ($file == "contact")
+		include('./index.php/contact');
 		else
-		echo "Could not understand your request.";
+		echo "Welcome home.";
 ?>
