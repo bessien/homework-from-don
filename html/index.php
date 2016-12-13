@@ -5,7 +5,7 @@
 	<?php echo var_dump($_SERVER); ?>
 </pre>-->
 <?php include('./nav.php');?>
-<!--<?php include('./router.php');?>-->
+<?php include('./router.php');?>
 
 </body>
 </html>
