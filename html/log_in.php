@@ -1,3 +1,3 @@
 <p>
-	<a href="/form.php">Log In</a>
+	<a href="/index.php/form">Log In</a>
 </p>
